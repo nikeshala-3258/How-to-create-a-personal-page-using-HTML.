@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal web page for exercise">
+    <meta name="keywords" content="HTML, personal, exercise">
+    <meta name="author" content="Nikeshala Dewindi">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showAlert() {
+            alert('Hello! Welcome to my personal web page.');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 title="This is my name">Nikeshala Dewindi</h1>
+        <nav>
+            <a href="#introduction" title="Go to Introduction section">Introduction</a>
+            <a href="#hobbies" title="Go to Hobbies section">Hobbies</a>
+            <a href="#contact" title="Go to Contact section">Contact</a>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hi! My name is Nikeshala Dewindi.<br> I am an undergraduate student at KDU University, studying Software Engineering.<br> I have a strong interest in technology and enjoy learning about programming, web development, and how computers work. My studies have helped me understand the basics of software engineering, and I am excited to use my skills in real-world projects </p>
+        <figure>
+            <img src="my_photo.jpg" alt="Your Image" width="400" height="500" title="This is a photo of me">
+            <figcaption>This is me.</figcaption>
+        </figure>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Reading Books
+                <figure>
+                    <img src="book.jpeg" alt="Your Image" width="800" height="400" title="I enjoy reading various books">
+                </figure>
+            </li>
+            <li>Watching Movies
+                <figure>
+                    <img src="movies.jpeg" alt="Your Image" width="800" height="400" title="Watching movies is one of my favorite pastimes">
+                </figure>
+            </li>
+            <li>Playing Netball
+                <figure>
+                    <img src="netball.jpeg" alt="Your Image" width="800" height="400" title="I play netball regularly to stay active">
+                </figure>
+            </li>
+        </ul>
+        <h3>Favorite Books/Movies</h3>
+        <ol>
+            <li>Cinderella
+                <figure>
+                    <img src="cinderella.jpg"  alt="Your Image" width="500" height="400" title="Cinderella is one of my favorite movies">
+                </figure>
+            </li>
+            <li>Snow White
+                <figure>
+                    <img src="snow_white.jpg" alt="Your Image" width="500" height="400" title="I love the story of Snow White">
+                </figure>
+            </li>
+            <li>The Mess That We Made
+                <figure>
+                    <img src="the_mess_that_we_made.jpg" alt="Your Image" width="500" height="400" title="This is a thought-provoking book I recommend">
+                </figure>
+            </li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" title="Enter your name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="Enter your email">
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" title="Enter your message"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <button type="button" onclick="showAlert()" title="Click to see a welcome message">Click Me!</button>
+        </form>
+    </section>
+
+    <section id="schedule">
+        <h2>My Weekly Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Activity</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Study and Coding Practice</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Netball Practice</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Attend Lectures</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Reading and Research</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Project Work</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Watch Movies</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Relax and Hobbies</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <hr>
+        <p>© 2024 Nikeshala Dewindi</p>
+    </footer>
+</body>
+</html>
